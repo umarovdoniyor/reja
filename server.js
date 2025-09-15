@@ -15,20 +15,13 @@ app.set('views', 'views');
 app.set('view engine', 'ejs');
 
 // 4: Routing code
+app.post('/create-item', (req, res) => {
+  console.log(req.body);
+  res.json({ test: 'success' });
+});
+
 app.get('/', function (req, res) {
-  res.end(
-    `<h1 style="background: lime">Home Page</h1> <p>Home page contents</p>`
-  );
-});
-app.get('/contact', function (req, res) {
-  res.end(
-    `<h1 style="background: grey">Contact Page</h1> <p>Contact informations</p>`
-  );
-});
-app.get('/services', function (req, res) {
-  res.end(
-    `<h1 style="background: orange">Services Page</h1> <p>Services info page</p>`
-  );
+  res.render('harid');
 });
 
 const server = http.createServer(app);

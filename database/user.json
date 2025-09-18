@@ -1,29 +1,35 @@
 {
-  "name": "Steve",
-  "profession": "Software Engineer",
-  "age": 20,
-  "residence": "S.Korea",
-  "address": "S.Korea, Seoul",
-  "languages": ["Uzbek", "Korean", "English"],
-  "skills": ["HTML", "CSS", "JS", "NodeJS", "Python"],
+  "name": "Marcos",
+  "profession": "Heart",
+  "age": 24,
+  "residence": "South Korea",
+  "address": "Seoul, South Korea",
+  "freelance": "Available",
+  "language": ["Uzbek", "English", "Korean"],
+  "skills": ["Html", "CSS", "JS", "NodeJs", "Python"],
   "extra_skills": [
-    "Bootstrap",
-    "Materialize",
-    "Styling",
-    "Sass",
-    "Django",
-    "Flask",
-    "GIT Knowledge"
+    "Bootstrap, Materialize",
+    "Styling, Sass",
+    "Django, Flask",
+    "Git Knowledge"
   ],
-  "work_place": "IT Company",
-  "service_desc": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-  "about_me": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sit amet consectetur adipiscing elit quisque faucibus ex. Adipiscing elit quisque faucibus ex sapien vitae pellentesque.",
-  "city": "Denau",
-  "title": ["Flower", "Seedling", "Gardner", "Old", "New"],
+  "my_services": [
+    ["Web Development", "Blog, E-Commerce"],
+    ["UI/UX Design", "Mobile App, Website Design"],
+    ["Sound Design", "Voice Over, Beat Making"],
+    ["Game Design", "Character Design, Props & Objects"],
+    ["Photography", "Portraits, Product Photography"],
+    ["Advertising", "Social Media & Forums"]
+  ],
+  "work_place": "Doctor Neurologists in OHSU Hospital",
+  "service_desc": "Amet Minim Non DEserunt Ullamco Est Sit Aliqua Dolor Do Amet Sit. Velit Officia Consequat Duis Enim Velit Mollit. Lorem Ipsum ",
+  "about_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "city": "Tashkent",
+  "title": ["flower", "Seedlings", "Gardner", "Old", "New"],
   "flower_desc": [
     "What is a Flower?",
-    "What is a Seedling?",
-    "Who is Gardner?"
+    "What is a Seedling",
+    "What is a Gardner"
   ],
   "flower_name": [
     "Tulip",
@@ -34,9 +40,19 @@
     "Rose",
     "Snowdrop",
     "Cherry",
-    "Blossom"
+    "blossom"
   ],
-  "flower_price": ["15$", "25$", "12$", "20$", "35$", "22$", "19$", "9$"],
-  "famous_words": ["World is Beautiful with Flowers"],
+  "flower_price": [
+    "15$",
+    "25$",
+    "20$",
+    "12$",
+    "35$",
+    "30$",
+    "22$",
+    "19$",
+    "9$"
+  ],
+  "famous_words": ["World is beautiful with flowers"],
   "famous_name": ["Steve Jobs"]
 }

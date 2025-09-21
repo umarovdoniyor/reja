@@ -70,3 +70,31 @@ async function maslahatBering(a) {
 //   console.log(javob);
 // }
 // run();
+
+// A-TASK:
+
+// Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+// MASALAN countLetter("e", "engineer") 3ni return qiladi.
+
+// masalani yechimi:
+
+function countLetter(letter, word) {
+  let count = 0;
+  if (typeof word === 'string' && typeof letter === 'string') {
+    word = word.toLowerCase().split('');
+    letter = letter.toLowerCase();
+    console.log('word: ', word);
+    for (const ele of word) {
+      if (letter === ele) {
+        count++;
+      }
+    }
+    return count;
+  } else {
+    return 'Please, insert a letter for the first argument and a string for the second argument to get a result';
+  }
+}
+
+const result = countLetter('e', 'engineeEEr');
+
+console.log('result:', result);

@@ -53,12 +53,12 @@ async function maslahatBering(a) {
   }
 }
 
-// then/catch
-// console.log('passed here 0');
-// maslahatBering(25)
-//   .then((data) => console.log('javob: ', data))
-//   .catch((err) => console.log('ERROR: ', err));
-// console.log('passed here 1');
+//then/catch
+console.log('passed here 0');
+maslahatBering(25)
+  .then((data) => console.log('javob: ', data))
+  .catch((err) => console.log('ERROR: ', err));
+console.log('passed here 1');
 
 // async/ await
 // async function run() {
@@ -71,6 +71,8 @@ async function maslahatBering(a) {
 // }
 // run();
 
+//=========================================================
+/*
 // A-TASK:
 
 // Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
@@ -84,17 +86,21 @@ function countLetter(letter, word) {
     word = word.toLowerCase().split('');
     letter = letter.toLowerCase();
     console.log('word: ', word);
-    for (const ele of word) {
-      if (letter === ele) {
-        count++;
-      }
-    }
+    // for (const ele of word) {
+    //   if (letter === ele) {
+    //     count++;
+    //   }
+    // }
+    word.forEach((el) => {
+      if (letter === el) count++;
+    });
     return count;
   } else {
     return 'Please, insert a letter for the first argument and a string for the second argument to get a result';
   }
 }
 
-const result = countLetter('e', 'engineeEEr');
+const result = countLetter('G', 'engineeEEr');
 
 console.log('result:', result);
+*/

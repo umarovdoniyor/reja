@@ -1,8 +1,8 @@
 console.log('Web server');
 const express = require('express');
-const app = express();
 const http = require('http');
 const fs = require('fs');
+const app = express();
 
 let user;
 fs.readFile('database/user.json', 'utf8', (err, data) => {
@@ -35,11 +35,13 @@ app.get('/author', (req, res) => {
 });
 
 app.get('/', function (req, res) {
-  res.render('harid');
+  res.render('reja');
 });
 
 const server = http.createServer(app);
 const PORT = 3000;
 server.listen(PORT, function () {
-  console.log(`The server is up and running on port: ${PORT}`);
+  console.log(
+    `The server is up and running on port: ${PORT}, http://localhost:${PORT}`
+  );
 });

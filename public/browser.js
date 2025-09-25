@@ -41,3 +41,27 @@ document.getElementById('create-form').addEventListener('submit', (e) => {
       console.log('Iltimos qaytadan harakat qiling!');
     });
 });
+
+document.addEventListener('click', (e) => {
+  // delete operation
+  if (e.target.classList.contains('delete-me')) {
+    // console.log('delete-me button triggered');
+    console.log('target: ', e.target);
+    if (confirm('Aniq ochirmoqchimisiz?')) {
+      axios
+        .post('/delete-item', { id: e.target.getAttribute('data-id') })
+        .then((response) => {
+          console.log('res.data: ', response.data);
+          e.target.parentElement.parentElement.remove();
+        })
+        .catch((err) => {
+          console.log('Iltimos qaytadan harakat qiling!');
+        });
+    }
+  }
+
+  // edit operation
+  if (e.target.classList.contains('edit-me')) {
+    console.log('edit-me button triggered');
+  }
+});

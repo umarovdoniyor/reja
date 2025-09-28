@@ -1,5 +1,66 @@
 console.log('=========== TRAIN MODE =========== ');
 //=========================================================
+// C-TASK
+
+/*
+  Shunday class tuzing tuzing nomi Shop, va uni constructoriga 3 hil mahsulot pass bolsin, hamda classning 3ta methodi bolsin, biri qoldiq, biri sotish va biri qabul. Har bir method ishga tushgan vaqt ham log qilinsin.
+MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta non, 5ta lagmon va 2ta cola mavjud! shop.sotish('non', 3) & shop.qabul('cola', 4) & shop.qoldiq() return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud!
+*/
+
+// masalani yechimi
+
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
+  }
+
+  // helper function for time
+  logWithTime(message) {
+    const time = new Date().toLocaleString();
+    console.log(`[${time}] da ${message}`);
+  }
+
+  // Show current stock
+  qoldiq() {
+    this.logWithTime(
+      `Qoldiq: Non = ${this.non}, Lagmon = ${this.lagmon}, Cola = ${this.cola} mavjud`
+    );
+  }
+
+  // Sell an item
+  sotish(item, amount) {
+    if (this[item] !== undefined) {
+      if (this[item] >= amount) {
+        this[item] -= amount;
+        this.logWithTime(`${amount} ta ${item} sotildi.`);
+      } else {
+        this.logWithTime(`Kechirasiz, ${item} yetarli emas.`);
+      }
+    } else {
+      this.logWithTime(`Bunday mahsulot yo'q: ${item}`);
+    }
+  }
+
+  // Receive new stock
+  qabul(item, amount) {
+    if (this[item] !== undefined) {
+      this[item] += amount;
+      this.logWithTime(`${amount} ta ${item} qabul qilindi.`);
+    } else {
+      this.logWithTime(`Bunday mahsulot yo'q: ${item}`);
+    }
+  }
+}
+
+const shop = new Shop(4, 5, 2);
+shop.qoldiq();
+shop.sotish('non', 3);
+shop.qabul('cola', 4);
+shop.qoldiq();
+
+//=========================================================
 // B-TASK
 
 /*
@@ -8,7 +69,7 @@ MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 */
 
 // masalani yechimi:
-
+/*
 const example_input = 'ad2a54y79wet0sfgb9';
 
 function countDigits(input) {
@@ -25,7 +86,7 @@ function countDigits(input) {
 }
 
 const result = countDigits(example_input);
-console.log(`Number of digits in the input string: ${result.length}`);
+console.log(`Number of digits in the input string: ${result.length}`);*/
 //=========================================================
 /*
 // A-TASK:

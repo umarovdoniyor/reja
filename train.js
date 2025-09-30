@@ -1,5 +1,33 @@
 console.log('=========== TRAIN MODE =========== ');
 //=========================================================
+// D-TASK
+
+/*
+  Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+*/
+
+// masalani yechimi
+
+function checkContent(str1, str2) {
+  // normalize to lowercase
+  str1 = str1.toLowerCase();
+  str2 = str2.toLowerCase();
+
+  if (str1.length !== str2.length) return false;
+
+  // Turn strings into arrays, sort, and join back
+  const sorted_str1 = str1.split('').sort().join('');
+  const sorted_str2 = str2.split('').sort().join('');
+
+  return sorted_str1 === sorted_str2;
+}
+
+// Test case
+console.log(checkContent('mitgroup', 'gmtiprou'));
+
+//=========================================================
 // C-TASK
 
 /*
@@ -8,7 +36,7 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 */
 
 // masalani yechimi
-
+/* 
 class Shop {
   constructor(non, lagmon, cola) {
     this.non = non;
@@ -59,7 +87,7 @@ shop.qoldiq();
 shop.sotish('non', 3);
 shop.qabul('coljjjja', 4);
 shop.qoldiq();
-
+*/
 //=========================================================
 // B-TASK
 

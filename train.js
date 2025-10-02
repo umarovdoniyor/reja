@@ -1,5 +1,18 @@
 console.log('=========== TRAIN MODE =========== ');
 //=========================================================
+// E-TASK:
+
+/*Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
+MASALAN: getReverse("hello") return qilsin "olleh"*/
+function getReverse(str) {
+  return str.split('').reverse().join('');
+}
+
+// Example usage:
+const examplelString = 'hello';
+const result = getReverse(examplelString);
+console.log(result);
+//=========================================================
 // D-TASK
 
 /*
@@ -9,7 +22,7 @@ MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 */
 
 // masalani yechimi
-
+/*
 function checkContent(str1, str2) {
   // normalize to lowercase
   str1 = str1.toLowerCase();
@@ -26,7 +39,7 @@ function checkContent(str1, str2) {
 
 // Test case
 console.log(checkContent('mitgroup', 'gmtiprou'));
-
+*/
 //=========================================================
 // C-TASK
 
